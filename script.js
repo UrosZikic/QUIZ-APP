@@ -93,6 +93,7 @@ function startMe() {
   if (timeTotal <= 0) {
     timeTotal += 0;
     time.innerHTML = "0";
+    checkboxes.forEach((item) => (item.checked = false));
     submit.disabled = false;
     submit.click();
   }
