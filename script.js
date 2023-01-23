@@ -24,7 +24,7 @@ const incorrect = document.querySelector(".incorrect");
 var points = 0;
 var submitCount = 0;
 var hintToggle = 0;
-var revealedHint = 0;
+var revealedHint = 1;
 answerOne.checked = false;
 answerTwo.checked = false;
 answerThree.checked = false;
@@ -62,7 +62,7 @@ checkMark.onclick = () => {
   hint.style.display = "none";
   hintRevealed.style.display = "block";
   hintRevealed.style.opacity = "1";
-  revealedHint += 1;
+
   if (revealedHint == 1) {
     hintRevealed.innerHTML =
       "Some words have the same meaning in a certain context";
@@ -334,6 +334,7 @@ next.onclick = () => {
     labelThree.innerHTML = "who";
     labelFour.innerHTML = "his";
     next.style.display = "none";
+    revealedHint = 2
   }
   if (submitCount == 1) {
     questionMark.innerHTML = "?";
@@ -344,6 +345,7 @@ next.onclick = () => {
     labelThree.innerHTML = "nor";
     labelFour.innerHTML = "but";
     next.style.display = "none";
+    revealedHint = 3
   }
   if (submitCount == 2) {
     questionMark.innerHTML = "?";
@@ -354,6 +356,7 @@ next.onclick = () => {
     labelThree.innerHTML = "made";
     labelFour.innerHTML = "styled";
     next.style.display = "none";
+    revealedHint = 4
   }
   if (submitCount == 3) {
     questionMark.innerHTML = "?";
@@ -364,6 +367,7 @@ next.onclick = () => {
     labelThree.innerHTML = "lest";
     labelFour.innerHTML = "will";
     next.style.display = "none";
+    revealedHint = 5
   }
 };
 next.addEventListener("click", () => {
