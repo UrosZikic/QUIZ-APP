@@ -52,6 +52,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  z-index: 999;
 }
 .start {
   padding: 1rem 3rem;
@@ -126,7 +127,8 @@
   z-index: 999;
 }
 .hint-btn {
- font-size: 4.5rem;
+  font-size: 4.5rem;
+  z-index: 998;
 }
 
 .hint-revealed {
@@ -156,3 +158,4 @@
   border-radius: 20px;
   transition: all 0.5s;
 }
+
