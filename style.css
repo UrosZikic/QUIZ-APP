@@ -1,0 +1,154 @@
+.quiz {
+  max-width: 60rem;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.redo {
+  color: white;
+}
+
+.quiz-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.grade-info,
+.score-info,
+.time-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 90rem;
+  height: 35rem;
+  margin: 15rem auto;
+  border: none;
+  border-radius: 20px;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  background-color: lightblue;
+  padding: 2rem;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  position: relative;
+}
+.start-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.start {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.answer-pool {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  align-self: flex-start;
+}
+.answer-pool div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btnOne,
+.btnTwo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  padding: 1rem 2rem;
+
+  border-radius: 0.5rem;
+  border: none;
+
+  background-color: lightblue;
+}
+.btnTwo {
+  right: 13rem;
+  display: none;
+}
+.btnThree {
+  position: absolute;
+  bottom: 1rem;
+  color: black;
+  transition: all 0.5s;
+}
+
+.correct {
+  color: green;
+  display: none;
+}
+.incorrect {
+  color: rgb(231, 74, 74);
+  display: none;
+}
+
+.score,
+.points,
+.grade,
+.time {
+  font-size: 3rem;
+  opacity: 0;
+}
+.time {
+  opacity: 1;
+}
+
+.hint,
+.hint-revealed {
+  font-size: 1.5rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 999;
+}
+.hint-revealed {
+  display: none;
+}
+
+.checkmark {
+  font-size: 3rem;
+}
+
+.progress-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 20rem;
+  height: 2.5rem;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.loading-bar {
+  background-color: white;
+  width: 0rem;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.5s;
+}

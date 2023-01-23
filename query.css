@@ -1,0 +1,22 @@
+@media (max-width: 27em) {
+  strong {
+    font-size: 1.5rem;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  ion-icon {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 21em) {
+  .progress-div {
+    flex-direction: column;
+  }
+}

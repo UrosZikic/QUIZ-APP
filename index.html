@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="JS QUIZ" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Uros Zikic" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="query.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="quiz">
+      <h1>
+        English Quiz <ion-icon name="reload-outline" class="redo"></ion-icon>
+      </h1>
+      <div class="quiz-info">
+        <div class="score-info">
+          <strong>score</strong>
+          <strong class="score"><strong class="points"></strong>/100</strong>
+        </div>
+        <div class="grade-info">
+          <strong>Grade</strong>
+          <strong class="grade">?</strong>
+        </div>
+
+        <div class="time-info">
+          <strong>Time left</strong>
+          <strong class="time">20</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////////////////////////////////////// -->
+
+    <div class="container">
+      <div class="progress-div">
+        <strong class="questionNumber">Question 1</strong>
+        <div class="progress-bar">
+          <div class="loading-bar"></div>
+        </div>
+      </div>
+      <strong class="question"
+        >Peter, the boy with red hair,
+        <strong class="question-mark">?</strong> a great writer.
+
+        <ion-icon name="happy-outline" class="correct"></ion-icon>
+        <ion-icon name="sad-outline" class="incorrect"></ion-icon>
+      </strong>
+      <form class="answer-pool">
+        <div>
+          <label for="answerOne" class="labelOne">are</label>
+          <input type="radio" name="answer" id="answerOne" class="answer" />
+        </div>
+        <div>
+          <label for="answerOne" class="labelTwo">has</label>
+          <input type="radio" name="answer" id="answerTwo" class="answer" />
+        </div>
+        <div>
+          <label for="answerOne" class="labelThree">were</label>
+          <input type="radio" name="answer" id="answerThree" class="answer" />
+        </div>
+        <div>
+          <label for="answerOne" class="labelFour">made</label>
+          <input type="radio" name="answer" id="answerFour" class="answer" />
+        </div>
+      </form>
+      <button class="btnOne submit-btn">Submit</button>
+      <button class="btnTwo next-btn">Next</button>
+      <ion-icon name="bulb-outline" class="btnThree hint-btn"></ion-icon>
+      <p class="hint">
+        -50 points
+        <ion-icon name="checkmark-outline" class="checkmark"></ion-icon>
+      </p>
+      <p class="hint-revealed">1</p>
+      <div class="start-cover">
+        <button class="start">start</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
