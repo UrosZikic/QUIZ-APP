@@ -125,6 +125,10 @@
   transition: all 0.5s;
   z-index: 999;
 }
+.hint-btn {
+ font-size: 4.5rem;
+}
+
 .hint-revealed {
   display: none;
 }
