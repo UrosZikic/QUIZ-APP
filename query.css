@@ -14,6 +14,8 @@
   ion-icon {
     font-size: 3rem;
   }
+  .hint-revealed {
+font-size: 1.4rem;
 }
 @media (max-width: 21em) {
   .progress-div {
