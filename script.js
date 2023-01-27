@@ -32,23 +32,26 @@ answerFour.checked = false;
 submit.disabled = "true";
 checkboxes = document.querySelectorAll(".answer");
 
-if (answerOne.checked == true) {
+answerOne.addEventListener("click", () => {
   answerTwo.checked = false;
-answerThree.checked = false;
-answerFour.checked = false;
-} else if (answerTwo.checked == true) {
+  answerThree.checked = false;
+  answerFour.checked = false;
+});
+answerTwo.addEventListener("click", () => {
   answerOne.checked = false;
-answerThree.checked = false;
-answerFour.checked = false;
-} else if (answerThree.checked == true) {
+  answerThree.checked = false;
+  answerFour.checked = false;
+});
+answerThree.addEventListener("click", () => {
   answerTwo.checked = false;
-answerOne.checked = false;
-answerFour.checked = false;
-} else if (answerFour.checked == true) {
+  answerOne.checked = false;
+  answerFour.checked = false;
+});
+answerFour.addEventListener("click", () => {
   answerTwo.checked = false;
-answerThree.checked = false;
-answerOne.checked = false;
-}
+  answerThree.checked = false;
+  answerOne.checked = false;
+});
 
 checkboxes.forEach((box) => {
   if (box.checked == false) {
