@@ -32,6 +32,24 @@ answerFour.checked = false;
 submit.disabled = "true";
 checkboxes = document.querySelectorAll(".answer");
 
+if (answerOne.checked == true) {
+  answerTwo.checked = false;
+answerThree.checked = false;
+answerFour.checked = false;
+} else if (answerTwo.checked == true) {
+  answerOne.checked = false;
+answerThree.checked = false;
+answerFour.checked = false;
+} else if (answerThree.checked == true) {
+  answerTwo.checked = false;
+answerOne.checked = false;
+answerFour.checked = false;
+} else if (answerFour.checked == true) {
+  answerTwo.checked = false;
+answerThree.checked = false;
+answerOne.checked = false;
+}
+
 checkboxes.forEach((box) => {
   if (box.checked == false) {
     submit.disabled = true;
